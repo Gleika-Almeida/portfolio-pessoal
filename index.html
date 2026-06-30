@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+    <title>Portfolio|Gleica</title>
+</head>
+<body>
+
+  <!--==================== Menu de Navegação ====================--> 
+     <header class="header">
+    <nav class="nav-bar" aria-label="Menu principal">
+      <a href="#home" class="logo">Gleik</a>
+
+      <ul class="nav-list" id="navList">
+        <li><a href="#home">home</a></li>
+        <li><a href="#sobre">sobre</a></li>
+        <li><a href="#formacao">formação</a></li>
+        <li><a href="#projetos">projetos</a></li>
+        <li><a href="#contato">contato</a></li>
+      </ul>
+
+      <button id="themeButton" class="theme-button">
+            🌙 
+      </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        ☰
+      </button>
+    </nav>
+  </header>
+
+  <main>
+          <!--==================== HOME ====================--> 
+    <section id="home" class="hero section"> 
+      <div class="container hero-content">
+
+        <div class="hero-text animation-left">
+          <h1>
+            Desenvolvedora<br>
+            Full Stack
+          </h1>
+
+          <div class="hero-description">
+            <p>
+              conectando design,
+              código e experiência do usuário.
+            </p>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="#projetos" class="btn primary">Ver Projetos</a>
+          </div>
+        </div>
+
+        <div class="hero-image animation-right">
+          <img src="img/pc.png" alt="Ilustração de desenvolvedora Full Stack trabalhando com tecnologia">
+        </div>
+
+      </div>
+    </section>
+        <!--==================== SOBRE MIM ====================--> 
+    <section id="sobre" class=" about">
+      <div class="container about-container reveal">
+        <h2 class="card">OLÁ, MEU NOME É Gleica</h2>
+        <div class="about-image">
+          <img src="img/foto-perfil-gleica.png" alt="" srcset="">
+        </div>
+        <div class="about-text ">
+          <p>
+         Sou estudante de <strong>Engenharia de Software </strong> Desenvolvedora <strong>Full Stack 
+         Freelancer</strong>. Tenho experiência anterior como <strong>Designer Gráfico </strong> e interesse 
+         em desenvolvimento <span>web</span> , interfaces responsivas e <strong>UI Design</strong>. Busco unir 
+         criatividade e tecnologia para criar aplicações funcionais, acessíveis, 
+         intuitivas e visualmente agradáveis.
+        </p>
+        </div>
+      </div>
+    </section>
+
+      <!--==================== FORMAÇÃO ====================-->
+    <section id="formacao" class="section">
+     <div class=" container container-formacao ">
+    
+    <div class="card formacao-card reveal project-card ">
+      <div class="formacao-icon">
+        <img src="img/icone2.png" alt="">
+      </div>
+      <div class="formacao-info">
+        <h3>
+          Bacharelado em Engenharia de Software
+        </h3>
+      <p>
+        Curso superior em andamento, com foco em desenvolvimento de software, engenharia de software, 
+        banco de dados relacional, linguagens de programação, lógica de programação e testes de software.
+      </p>
+      </div>
+    </div>
+
+    <div class="project-card  formacao-card   ">
+      <div class="formacao-icon">
+        <img src="img/icone1.png" alt="">
+      </div>
+      <div class="formacao-info">
+      <h3>Técnico em Informática</h3>
+      <p>
+        Formação técnica com foco em lógica de programação, banco de dados, programação web, redes de computadores, 
+        sistemas operacionais, manutenção de computadores, documentação de projetos, design web e desenvolvimento de sistemas.
+      </p>
+    </div>
+    </div>
+    <div class="project-card  formacao-card  ">
+      <div class="formacao-icon">
+        <img src="img/icone3.png" alt="" srcset="">
+      </div>
+      <div class="formacao-info" >
+      <h3>Cursos Livres</h3>
+      <p>
+        Estudos complementares em JavaScript ES6+, TypeScript, React, Node.js, Express, Python, Django, Java, SQL, MySQL, PHP, 
+        Git, GitHub, orientação a objetos, testes, TDD, design patterns, desenvolvimento responsivo e Figma.
+      </p>
+    </div>
+    </div>
+    
+  </div>
+</section>
+      <!--==================== PROJETOS ====================-->
+    <section id="projetos" class="section">
+     <div class="container">
+    
+    <div class="projects-grid">
+      <article class="project-card  reveal">
+        <img 
+          src="img/projeto-pet.png" 
+          alt="Imagem do projeto Landing Page"
+          class="project-image">
+
+        <div class="project-content">
+          <h3>Landing Page Pet</h3>
+
+          <p>
+            Em desemvolvimento
+          </p>
+
+          <div class="project-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+             <span>JavaScript</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <img 
+          src="img/projeto-contatos.jpg" 
+          alt="Imagem do projeto Sistema de Contatos"
+          class="project-image">
+
+        <div class="project-content">
+          <h3>Sistema de Contatos</h3>
+
+          <p>
+            Em desemvolvimento
+          </p>
+
+          <div class="project-tags">
+            <span>JavaScript</span>
+            <span>Lógica</span>
+            <span>CRUD</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+        <!--==================== CONTATOS ====================-->
+    <section id="contato" class="section">
+      <div class="container">
+        <div class="contato-sub">
+          <h2>Vamos trabalhar juntos</h2>
+        </div>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              placeholder="Digite seu nome">
+            <small class="error-message"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="Digite seu e-mail">
+            <small class="error-message"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="5" 
+              placeholder="Digite sua mensagem"
+            ></textarea>
+            <small class="error-message"></small>
+          </div>
+
+          <button type="submit" class="submit-button btn primary">
+            Enviar mensagem
+          </button>
+          <p id="successMessage" class="success-message"></p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+      <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <p>&copy; 2026 Gleika. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
